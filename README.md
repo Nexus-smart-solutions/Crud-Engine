@@ -232,4 +232,5 @@ The test suite uses Orchestra Testbench against an in-memory SQLite database and
 
 ## License
 
-MIT.
+@NexusSmartSolution.
+<img width="450" height="450" alt="Up_Scale_Logo-removebg-preview" src="https://github.com/user-attachments/assets/f9edfb9a-7b6f-407c-ac47-6a0ec2dd6b5c" />
