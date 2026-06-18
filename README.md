@@ -7,7 +7,7 @@ Supports Laravel 10, 11, and 12, on PHP 8.2+.
 ## Installation
 
 ```bash
-composer require Nexus-smart-solutions/crud-engine
+composer require nexus-smart-solutions/crud-engine
 ```
 
 The service provider and facade are auto-discovered — no manual registration needed.

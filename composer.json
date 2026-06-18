@@ -1,5 +1,5 @@
 {
-    "name": "Nexus-smart-solutions/crud-engine",
+    "name": "nexus-smart-solutions/crud-engine",
     "description": "Generic CRUD services, file lifecycle management, nested relation synchronization, a statistics engine, and Laravel macros — extracted into a reusable, testable, framework-friendly package.",
     "type": "library",
     "license": "MIT",
