@@ -1,0 +1,55 @@
+{
+    "name": "nexus/crud-engine",
+    "description": "Generic CRUD services, file lifecycle management, nested relation synchronization, a statistics engine, and Laravel macros — extracted into a reusable, testable, framework-friendly package.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "crud", "repository", "file-upload", "relations", "statistics"],
+    "authors": [
+        {
+            "name": "Nexus Smart Solutions"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0",
+        "nesbot/carbon": "^2.0|^3.0"
+    },
+    "suggest": {
+        "spatie/laravel-query-builder": "Required only if you set crud-engine.statistics.query_strategy to 'spatie'."
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0",
+        "mockery/mockery": "^1.6",
+        "spatie/laravel-query-builder": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nexus\\CrudEngine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nexus\\CrudEngine\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nexus\\CrudEngine\\Providers\\CrudEngineServiceProvider"
+            ],
+            "aliases": {
+                "CrudEngine": "Nexus\\CrudEngine\\Facades\\CrudEngine"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
