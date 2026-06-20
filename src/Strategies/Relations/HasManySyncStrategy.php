@@ -69,9 +69,17 @@ final class HasManySyncStrategy implements RelationSyncStrategyInterface
         ));
 
         // Bulk-load existing rows once instead of one find() per incoming row.
-        $existingById = $relation->whereIn($relation->getRelated()->getKeyName(), $incomingIds)
-            ->get()
-            ->keyBy($relation->getRelated()->getKeyName());
+        $existingById = empty($incomingIds)
+                ? collect()
+                : (clone $relation)
+                    ->whereIn(
+                        $relation->getRelated()->getKeyName(),
+                        $incomingIds
+                    )
+                    ->get()
+                    ->keyBy(
+                        $relation->getRelated()->getKeyName()
+                    );
 
         // Delete rows that exist but were not present in the incoming payload.
         $relation->get()
