@@ -9,23 +9,25 @@
             "name": "Nexus Smart Solutions"
         }
     ],
+  
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^10.0|^11.0|^12.0",
-        "illuminate/database": "^10.0|^11.0|^12.0",
-        "illuminate/http": "^10.0|^11.0|^12.0",
-        "illuminate/contracts": "^10.0|^11.0|^12.0",
-        "illuminate/filesystem": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0|^13.0",
         "nesbot/carbon": "^2.0|^3.0"
     },
-    "suggest": {
-        "spatie/laravel-query-builder": "Required only if you set crud-engine.statistics.query_strategy to 'spatie'."
-    },
     "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
         "phpunit/phpunit": "^10.0|^11.0",
         "mockery/mockery": "^1.6",
         "spatie/laravel-query-builder": "^5.0|^6.0"
+    }
+
+    "suggest": {
+        "spatie/laravel-query-builder": "Required only if you set crud-engine.statistics.query_strategy to 'spatie'."
     },
     "autoload": {
         "psr-4": {
