@@ -25,7 +25,7 @@
         "mockery/mockery": "^1.6",
         "spatie/laravel-query-builder": "^5.0|^6.0"
     }
-
+,
     "suggest": {
         "spatie/laravel-query-builder": "Required only if you set crud-engine.statistics.query_strategy to 'spatie'."
     },
