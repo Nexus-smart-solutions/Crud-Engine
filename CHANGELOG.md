@@ -1,33 +1,36 @@
 # Changelog
 
-## v1.0.2
+All notable changes to this project will be documented in this file.
 
-### Fixed
-
-- Fixed HasMany relation orphan deletion bug.
-- Fixed relation query mutation caused by reusing the same HasMany relation instance.
-- Added regression coverage for empty relation payload synchronization.
-
-### Changed
-
-- Package renamed to:
-
-nexus-smart-solutions/crud-engine
+The format is based on Keep a Changelog.
+This project follows Semantic Versioning (SemVer).
 
 ---
 
-## v1.0.1
+## [1.0.3] - 2026-06-21
 
-### Initial Public Release
+### Added
 
-- CRUD Store Services
-- CRUD Update Services
-- CRUD Delete Services
-- File Lifecycle Management
-- HasOne Relations
-- HasMany Relations
-- ManyToMany Relations
-- Nested Relation Synchronization
-- Events & Listeners
-- Repository Layer
-- DTOs & Contracts
+- Added official support for Laravel 13.
+- Added compatibility constraints for:
+  - Laravel 10
+  - Laravel 11
+  - Laravel 12
+  - Laravel 13
+- Added support for PHP 8.2 and PHP 8.3.
+- Added Orchestra Testbench 11 support for Laravel 13 testing.
+
+### Changed
+
+- Updated all Illuminate package constraints:
+
+  - illuminate/support
+  - illuminate/database
+  - illuminate/http
+  - illuminate/contracts
+  - illuminate/filesystem
+
+  from:
+
+  ```text
+  ^10.0|^11.0|^12.0
